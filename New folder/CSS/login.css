@@ -1,0 +1,195 @@
+.log-in-form {
+    color: #222;
+    margin: 5vw auto;
+    box-shadow: 0 0 1vw grey;
+    border-radius: 1vw;
+    position: relative;
+    overflow: auto;
+}
+
+.form-item {
+    color: var(--text-3);
+}
+
+.form-item label>a {
+    color: var(--col-3);
+    font-weight: bold;
+}
+
+.form-item label {
+    float: right;
+    font-size: 1vw;
+}
+
+.form-item label[for] {
+    float: left;
+    font-weight: bold;
+}
+
+.password {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.show::before {
+    font-family: Material Icons;
+    content: 'visibility';
+}
+
+.hide::before {
+    font-family: Material Icons;
+    content: 'visibility_off';
+}
+
+input, select {
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+input[type='text'], input[type='password'], input[type='submit'] {
+    width: 100%;
+}
+
+select {
+    width: 45%;
+}
+
+input[type='tel'] {
+    width: 53.5%;
+}
+
+input[type='submit'] {
+    color: var(--text-1);
+    font-weight: bold;
+    background: var(--col-1);
+    border: none;
+}
+
+input[type='submit']:hover {
+    color: var(--bg-5);
+    background: var(--bg-4);
+}
+
+@media(min-aspect-ratio:8/5), (min-width:800px) {
+    .log-in-form {
+        width: 40%;
+    }
+
+    .log-in-form-wrapper {
+        width: 80%;
+        margin: 10% auto;
+    }
+
+    .form-heading {
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .form-item {
+        margin-top: 3vw;
+    }
+
+    .form-item>label[for] {
+        font-size: 1.25vw;
+    }
+
+    .form-item>label {
+        font-size: 1vw;
+    }
+
+    input[type='text'], input[type='tel'], input[type='password'], input[type='submit'], select {
+        height: 3.5vw;
+        font-size: 1.5vw;
+        border: 0.1vw solid var(--text-5);
+        border-radius: 0.25vw;
+    }
+
+    input[type='text']:focus, input[type='tel']:focus, input[type='password']:focus, select:focus {
+        border: solid 0.2vw var(--col-3);
+        font-size: 2vw;
+    }
+}
+
+@media(max-aspect-ratio:8/5) and (min-aspect-ratio:17/20) and (max-width:800px) {
+    .log-in-form {
+        width: 60%;
+    }
+
+    .log-in-form-wrapper {
+        width: 85%;
+        margin: 7.5% auto;
+    }
+
+    .form-heading {
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .form-item {
+        margin-top: 5vw;
+    }
+
+    .form-item>label[for] {
+        font-size: 2vw;
+    }
+
+    .form-item>label {
+        font-size: 1.75vw;
+    }
+
+    input[type='text'], input[type='tel'], input[type='password'], input[type='submit'], select {
+        height: 5.5vw;
+        font-size: 2.5vw;
+        border: 0.15vw solid var(--text-5);
+        border-radius: 0.4vw;
+    }
+
+    input[type='text']:focus, input[type='tel']:focus, input[type='password']:focus, select:focus {
+        border: solid 0.3vw var(--col-3);
+        font-size: 3vw;
+    }
+}
+
+@media(max-aspect-ratio:17/20) and (max-width:800px) {
+    .log-in-form {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .log-in-form-wrapper {
+        width: 85%;
+        margin: 7.5% auto;
+    }
+
+    .form-heading {
+        font-size: 7vw;
+        font-weight: bold;
+    }
+
+    .form-item {
+        margin-top: 7vw;
+    }
+
+    .form-item>label[for] {
+        font-size: 3vw;
+    }
+
+    .form-item>label {
+        font-size: 2.75vw;
+    }
+
+    input[type='text'], input[type='tel'], input[type='password'], input[type='submit'], select {
+        height: 7.5vw;
+        font-size: 3vw;
+        border: 0.2vw solid var(--text-5);
+        border-radius: 0.55vw;
+    }
+
+    input[type='text']:focus, input[type='tel']:focus, input[type='password']:focus, select:focus {
+        border: solid 0.4vw var(--col-3);
+        font-size: 3.5vw;
+    }
+}

@@ -1,0 +1,20 @@
+:root{
+    --bg-1:#F7F7F7;
+    --bg-2:#ed0404;
+    --bg-3:#ffff59;
+    --bg-4:rgb(251, 175, 33);
+    --bg-5:#7e3b5b;
+    --col-1:#414141;
+    --col-2:#979797;
+    --col-3:#0492f8;
+
+    /*Font families*/
+    --font-1:arial;
+
+    /*Font families*/
+    --text-1:#ffffff;
+    --text-2:#ffff59;
+    --text-3:#333;
+    --text-4:#222;
+    --text-5:#ced4da; 
+}
